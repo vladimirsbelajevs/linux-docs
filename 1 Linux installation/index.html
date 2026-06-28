@@ -25,7 +25,7 @@
     
     
       
-        <title>1 Linux installation - My linux notes</title>
+        <title>Linux installation - My linux notes</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#post-install" class="md-skip">
+        <a href="#linux-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1 Linux installation
+              Linux installation
             
           </span>
         </div>
@@ -244,6 +244,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux installation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -251,7 +269,7 @@
   <span class="md-ellipsis">
     
   
-    1 Linux installation
+    Linux installation
   
 
     
@@ -260,6 +278,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#post-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post install
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mounting-additional-drives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mounting additional drives
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -279,7 +338,7 @@
   <span class="md-ellipsis">
     
   
-    Authorize Android ADB
+    Android studio
   
 
     
@@ -360,7 +419,7 @@
   <span class="md-ellipsis">
     
   
-    Generate SSH keys
+    GIT SSH
   
 
     
@@ -414,7 +473,7 @@
   <span class="md-ellipsis">
     
   
-    Speed up boot
+    Linux Optimizations
   
 
     
@@ -441,7 +500,7 @@
   <span class="md-ellipsis">
     
   
-    Command info
+    Linux common commands
   
 
     
@@ -468,7 +527,7 @@
   <span class="md-ellipsis">
     
   
-    Uninstalling nvidia drivers
+    NVIDIA
   
 
     
@@ -522,7 +581,7 @@
   <span class="md-ellipsis">
     
   
-    CachyOS chroot helper
+    Recover borked linux from live CD
   
 
     
@@ -549,7 +608,7 @@
   <span class="md-ellipsis">
     
   
-    Sunshine (Streaming/remote desktop)
+    Remote desktop
   
 
     
@@ -609,6 +668,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#post-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post install
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mounting-additional-drives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mounting additional drives
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -624,10 +713,11 @@
 
 
 
+<h1 id="linux-installation">Linux installation<a class="headerlink" href="#linux-installation" title="Permanent link">&para;</a></h1>
 <p>I recommend installing <a href="https://cachyos.org/download/">CachyOS (Arch)</a> for up-to-date packages as Arch is a rolling release.
 When installing choose <strong>BTRFS file-system</strong> with <strong>Limine as bootloader</strong> for snapshot support for easy rollbacks in case of bad updates (or breaking system while thinkering).
 For desktop environment choose <strong>KDE as it's closer in feel to Windows</strong> (and has a lot of customization options). For interactive terminal shell use Fish (as it has good autocomplete/history), you can switch to bash in terminal using "bash" command. For AUR installer I prefer paru, but you can also use yay (then just substitute in pages where I have paru with yay). In a lot of tutorials for editing files from terminal they use nano, but I prefer <a href="https://micro-editor.github.io/">micro</a> as it has saner default keybindings</p>
-<h1 id="post-install">Post install<a class="headerlink" href="#post-install" title="Permanent link">&para;</a></h1>
+<h2 id="post-install">Post install<a class="headerlink" href="#post-install" title="Permanent link">&para;</a></h2>
 <p>For terminal good option is <a href="https://ghostty.org/">ghostty</a> install it using and set it as default
 <div class="highlight"><pre><span></span><code>sudo pacman -S ghostty
 </code></pre></div></p>
@@ -670,7 +760,7 @@ For User repository https://aur.archlinux.org/</p>
 <p>If you really have no other alternative for an app you want to run you can use <a href="https://aur.archlinux.org/packages/winboat-bin">WinBoat</a> for Windows VM:
 <div class="highlight"><pre><span></span><code>paru winboat-bin
 </code></pre></div></p>
-<h1 id="mounting-additional-drives">Mounting additional drives<a class="headerlink" href="#mounting-additional-drives" title="Permanent link">&para;</a></h1>
+<h2 id="mounting-additional-drives">Mounting additional drives<a class="headerlink" href="#mounting-additional-drives" title="Permanent link">&para;</a></h2>
 <p>If you have more than one drive on your PC you can configure so that rest of the drives are automounted on boot (so that you don't have to mount it manually every time in dolphin)
 <a href="https://wiki.cachyos.org/configuration/automount_with_fstab/#_top">Here is tutorial from Cachy wiki</a></p>
 
