@@ -12,19 +12,13 @@ pip install mkdocs-material
 
 ## Subsequent runs
 
-Enable venv first (from bash)
-
-```
-source .venv/bin/activate
-```
-
 Check locally
 
 ```
-mkdocs serve
+./serve.sh
 ```
 
-Deploy while in venv using
+Deploy using
 
 ```
 ./deploy_docs.sh
