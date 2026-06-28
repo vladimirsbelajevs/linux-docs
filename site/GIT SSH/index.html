@@ -25,7 +25,7 @@
     
     
       
-        <title>Generate SSH keys - My linux notes</title>
+        <title>GIT SSH - My linux notes</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#generate-ssh-keys" class="md-skip">
+        <a href="#git-ssh" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Generate SSH keys
+              GIT SSH
             
           </span>
         </div>
@@ -242,7 +242,7 @@
   <span class="md-ellipsis">
     
   
-    1 Linux installation
+    Linux installation
   
 
     
@@ -269,7 +269,7 @@
   <span class="md-ellipsis">
     
   
-    Authorize Android ADB
+    Android studio
   
 
     
@@ -352,6 +352,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT SSH
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -359,7 +377,7 @@
   <span class="md-ellipsis">
     
   
-    Generate SSH keys
+    GIT SSH
   
 
     
@@ -368,6 +386,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generate-ssh-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate SSH keys
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-host-key-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add host-key mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#register-domains-as-known-hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register domains as known hosts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registering-generated-ssh-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registering generated SSH keys
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#later-on-each-repo-config-your-username-and-email-using" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Later on each repo config your username and email using
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloning repo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -414,7 +517,7 @@
   <span class="md-ellipsis">
     
   
-    Speed up boot
+    Linux Optimizations
   
 
     
@@ -441,7 +544,7 @@
   <span class="md-ellipsis">
     
   
-    Command info
+    Linux common commands
   
 
     
@@ -468,7 +571,7 @@
   <span class="md-ellipsis">
     
   
-    Uninstalling nvidia drivers
+    NVIDIA
   
 
     
@@ -522,7 +625,7 @@
   <span class="md-ellipsis">
     
   
-    CachyOS chroot helper
+    Recover borked linux from live CD
   
 
     
@@ -549,7 +652,7 @@
   <span class="md-ellipsis">
     
   
-    Sunshine (Streaming/remote desktop)
+    Remote desktop
   
 
     
@@ -609,6 +712,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generate-ssh-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate SSH keys
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-host-key-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add host-key mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#register-domains-as-known-hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register domains as known hosts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registering-generated-ssh-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registering generated SSH keys
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#later-on-each-repo-config-your-username-and-email-using" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Later on each repo config your username and email using
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloning repo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -624,12 +801,13 @@
 
 
 
-<h1 id="generate-ssh-keys">Generate SSH keys<a class="headerlink" href="#generate-ssh-keys" title="Permanent link">&para;</a></h1>
+<h1 id="git-ssh">GIT SSH<a class="headerlink" href="#git-ssh" title="Permanent link">&para;</a></h1>
+<h2 id="generate-ssh-keys">Generate SSH keys<a class="headerlink" href="#generate-ssh-keys" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>ssh-keygen -t rsa-sha2-512 -C &quot;your.email@domain.lv&quot; -f ~/.ssh/id_rsa_work
 
 ssh-keygen -t ed25519 -C &quot;your.email@gmail.com&quot; -f ~/.ssh/id_ed25519_personal
 </code></pre></div>
-<h1 id="add-host-key-mapping">Add host-key mapping<a class="headerlink" href="#add-host-key-mapping" title="Permanent link">&para;</a></h1>
+<h2 id="add-host-key-mapping">Add host-key mapping<a class="headerlink" href="#add-host-key-mapping" title="Permanent link">&para;</a></h2>
 <p>run 
 <div class="highlight"><pre><span></span><code>micro ~/.ssh/config
 </code></pre></div></p>
@@ -650,23 +828,23 @@ Host devops-company
 ssh-add ~/.ssh/id_ed25519_personal  
 ssh-add ~/.ssh/id_rsa_work
 </code></pre></div></p>
-<h1 id="register-domains-as-known-hosts">Register domains as known hosts<a class="headerlink" href="#register-domains-as-known-hosts" title="Permanent link">&para;</a></h1>
+<h2 id="register-domains-as-known-hosts">Register domains as known hosts<a class="headerlink" href="#register-domains-as-known-hosts" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>ssh-keyscan github.com &gt;&gt; ~/.ssh/known_hosts
 
 ssh-keyscan ssh.dev.azure.com &gt;&gt; ~/.ssh/known_hosts
 </code></pre></div>
-<h1 id="registering-generated-ssh-keys">Registering generated SSH keys<a class="headerlink" href="#registering-generated-ssh-keys" title="Permanent link">&para;</a></h1>
+<h2 id="registering-generated-ssh-keys">Registering generated SSH keys<a class="headerlink" href="#registering-generated-ssh-keys" title="Permanent link">&para;</a></h2>
 <p>Next you need to register the generated SSH keys in github azure devops. You can read the public keys you have generated like this.</p>
 <div class="highlight"><pre><span></span><code>cat ~/.ssh/id_rsa_work.pub
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>cat ~/.ssh/id_ed25519_personal.pub
 </code></pre></div>
-<h1 id="later-on-each-repo-config-your-username-and-email-using">Later on each repo config your username and email using<a class="headerlink" href="#later-on-each-repo-config-your-username-and-email-using" title="Permanent link">&para;</a></h1>
+<h2 id="later-on-each-repo-config-your-username-and-email-using">Later on each repo config your username and email using<a class="headerlink" href="#later-on-each-repo-config-your-username-and-email-using" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>git config user.name &quot;YourName YourSurname&quot;
 
 git config user.email &quot;your.email@gmail.com&quot;
 </code></pre></div>
-<h1 id="cloning-repo">Cloning repo<a class="headerlink" href="#cloning-repo" title="Permanent link">&para;</a></h1>
+<h2 id="cloning-repo">Cloning repo<a class="headerlink" href="#cloning-repo" title="Permanent link">&para;</a></h2>
 <p>From folder where you want to clone run
 <div class="highlight"><pre><span></span><code>git clone git@github.com:org/repo.git
 </code></pre></div></p>

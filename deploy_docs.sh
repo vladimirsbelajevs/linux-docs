@@ -3,4 +3,4 @@
 git add .
 git commit -m "Update notes"
 git push origin main
-mkdocs gh-deploy
+.venv/bin/mkdocs gh-deploy

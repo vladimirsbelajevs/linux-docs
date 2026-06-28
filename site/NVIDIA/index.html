@@ -25,7 +25,7 @@
     
     
       
-        <title>Uninstalling nvidia drivers - My linux notes</title>
+        <title>NVIDIA - My linux notes</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uninstalling-nvidia-drivers" class="md-skip">
+        <a href="#nvidia" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Uninstalling nvidia drivers
+              NVIDIA
             
           </span>
         </div>
@@ -242,7 +242,7 @@
   <span class="md-ellipsis">
     
   
-    1 Linux installation
+    Linux installation
   
 
     
@@ -269,7 +269,7 @@
   <span class="md-ellipsis">
     
   
-    Authorize Android ADB
+    Android studio
   
 
     
@@ -350,7 +350,7 @@
   <span class="md-ellipsis">
     
   
-    Generate SSH keys
+    GIT SSH
   
 
     
@@ -404,7 +404,7 @@
   <span class="md-ellipsis">
     
   
-    Speed up boot
+    Linux Optimizations
   
 
     
@@ -431,7 +431,7 @@
   <span class="md-ellipsis">
     
   
-    Command info
+    Linux common commands
   
 
     
@@ -460,6 +460,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NVIDIA
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -467,7 +485,7 @@
   <span class="md-ellipsis">
     
   
-    Uninstalling nvidia drivers
+    NVIDIA
   
 
     
@@ -476,6 +494,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uninstalling-nvidia-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uninstalling nvidia drivers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install again
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -522,7 +581,7 @@
   <span class="md-ellipsis">
     
   
-    CachyOS chroot helper
+    Recover borked linux from live CD
   
 
     
@@ -549,7 +608,7 @@
   <span class="md-ellipsis">
     
   
-    Sunshine (Streaming/remote desktop)
+    Remote desktop
   
 
     
@@ -609,6 +668,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uninstalling-nvidia-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uninstalling nvidia drivers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install again
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -624,7 +713,8 @@
 
 
 
-<h1 id="uninstalling-nvidia-drivers">Uninstalling nvidia drivers<a class="headerlink" href="#uninstalling-nvidia-drivers" title="Permanent link">&para;</a></h1>
+<h1 id="nvidia">NVIDIA<a class="headerlink" href="#nvidia" title="Permanent link">&para;</a></h1>
+<h2 id="uninstalling-nvidia-drivers">Uninstalling nvidia drivers<a class="headerlink" href="#uninstalling-nvidia-drivers" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>sudo pacman -R nvidia-settings
 sudo pacman -R lib32-nvidia-utils
 sudo pacman -R libxnvctrl
@@ -635,7 +725,7 @@ sudo pacman -R egl-x11
 sudo pacman -R egl-gbm
 sudo pacman -R egl-wayland
 </code></pre></div>
-<h1 id="install-again">Install again<a class="headerlink" href="#install-again" title="Permanent link">&para;</a></h1>
+<h2 id="install-again">Install again<a class="headerlink" href="#install-again" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>sudo pacman -R nvidia-inst
 </code></pre></div>
 

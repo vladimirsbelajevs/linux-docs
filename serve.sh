@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-mkdocs serve
+.venv/bin/mkdocs serve
