@@ -1,3 +1,4 @@
+# Enable wake on lan
 Show the current networks
 ```
 nmcli con show

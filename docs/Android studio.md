@@ -1,4 +1,5 @@
-# Authorize Android ADB
+# Android studio
+## Authorize Android ADB
 If you get an error in VS code when connecting your phone using cable "Flutter daemon has terminated."
 
 For me the solution was as follows:

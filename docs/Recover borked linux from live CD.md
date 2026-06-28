@@ -1,7 +1,8 @@
-# CachyOS chroot helper
+# Recover borked linux from live CD
+## CachyOS chroot helper
 See the official documentation for details: [chroot](https://wiki.cachyos.org/features/cachy_chroot/)
 
-# Manual approach
+## Manual approach
 
 1. Run command to list all your disks:
 ```

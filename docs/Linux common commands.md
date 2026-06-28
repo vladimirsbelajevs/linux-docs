@@ -1,4 +1,5 @@
-# Command info
+# Linux common commands
+## Command info
 
 If you want to see command options (in short way, give me the tl;dr)
 ```
@@ -9,7 +10,7 @@ If you want to see the verbose version (full on manual)
 ```
 man package_name
 ```
-# Startup programs
+## Startup programs
 Enable app on startup
 ```
 systemctl --user enable app_name
@@ -35,8 +36,8 @@ Check if it's running
 systemctl --user is-active sunshine
 ```
 
-# Troubleshooting
-## Checking system logs for errors/warnings
+## Troubleshooting
+### Checking system logs for errors/warnings
 Last boot warnings
 ```
 journalctl -b -1 -p warning
@@ -62,22 +63,22 @@ KDE issues on current boot
 journalctl --user-unit plasma-kwin_wayland --boot 0
 ```
 
-## Checking kernel boot messages
+### Checking kernel boot messages
 ```
 sudo dmesg
 ```
 
-## Check boot time
+### Check boot time
 ```
 systemd-analyze blame
 ```
 
-## See app startup times
+### See app startup times
 ```
 time firefox
 ```
 
-# Opening ports
+## Opening ports
 
 ```
 sudo ufw allow port_nr/protocol (udp/tcp)

@@ -1,3 +1,4 @@
+# Package management (App install)
 `pacman` is the official Arch package manager. On CachyOS / Arch, this should be your **default choice**. It installs packages from official repositories configured on your system.
 
 `yay` and `paru` are **AUR helpers**. The AUR is the Arch User Repository. It is not the same as official Arch repos. It contains user-maintained build scripts called `PKGBUILD`s. Use for Apps not available in official repos, especially when you want native system integration.
@@ -9,7 +10,7 @@ Flatpak is a universal app packaging system. It installs applications in a more 
 
 AppImage is a portable app format. You download a single file, make it executable, and run it. It is not really a package manager. It is more like a portable executable bundle. Use AppImage for trying an app quickly, niche software, one-off tools, or apps where the author officially provides AppImage as the main Linux build.
 
-# Practical priority order on CachyOS / Arch
+## Practical priority order on CachyOS / Arch
 1. pacman  
 2. paru/yay  
 3. Flatpak  
@@ -22,7 +23,7 @@ AppImage = portable executable file
 
 Note: For proprietary GUI apps Flatpak is often better than AUR.
 
-## Use **pacman** for
+### Use **pacman** for
 kernels  
 drivers  
 KDE  
@@ -33,12 +34,12 @@ development tools
 Steam if available  
 system libraries
 
-## Use **paru/yay** for
+### Use **paru/yay** for
 AUR-only developer tools  
 vendor-provided binaries  
 niche Linux apps
 
-## Use **Flatpak** for
+### Use **Flatpak** for
 Spotify  
 Discord  
 Slack  
@@ -46,12 +47,12 @@ Zoom
 GIMP/Krita if you want app isolation  
 random proprietary GUI apps
 
-## Use **AppImage** for
+### Use **AppImage** for
 testing apps  
 small niche tools  
 apps that officially ship only as AppImage
 
-# Installation
+## Installation
 To install system packages run:
 ```
 sudo pacman -S package_name
@@ -73,7 +74,7 @@ To install flatpak package run:
 flatpak install package_name
 ```
 
-# Uninstall
+## Uninstall
 The "safe and clean" way to remove a pacman package, its unneeded dependencies, and its configuration files
 ```
 sudo pacman -Rns package_name
@@ -100,7 +101,7 @@ or
 yay uninstall package_name
 ```
 
-# Update
+## Update
 To update all pacman packages run:
 ```
 sudo pacman -Syu
@@ -128,22 +129,22 @@ To update flatpak packages run:
 flatpak update
 ```
 
-# Search installed pacman package
+## Search installed pacman package
 ```
 pacman -Q --info package_name
 ```
 
-# List orphans
+## List orphans
 ```
 pacman -Qdt
 ```
 
-## Remove orphans
+### Remove orphans
 ```
 pacman -Qdtq | pacman -Rns -
 ```
 
-# Clear pacman cache
+## Clear pacman cache
 ```
 sudo pacman -Scc
 ```

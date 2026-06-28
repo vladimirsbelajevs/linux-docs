@@ -1,8 +1,9 @@
+# Linux installation
 I recommend installing [CachyOS (Arch)](https://cachyos.org/download/) for up-to-date packages as Arch is a rolling release.
 When installing choose **BTRFS file-system** with **Limine as bootloader** for snapshot support for easy rollbacks in case of bad updates (or breaking system while thinkering).
 For desktop environment choose **KDE as it's closer in feel to Windows** (and has a lot of customization options). For interactive terminal shell use Fish (as it has good autocomplete/history), you can switch to bash in terminal using "bash" command. For AUR installer I prefer paru, but you can also use yay (then just substitute in pages where I have paru with yay). In a lot of tutorials for editing files from terminal they use nano, but I prefer [micro](https://micro-editor.github.io/) as it has saner default keybindings
 
-# Post install 
+## Post install 
 For terminal good option is [ghostty](https://ghostty.org/) install it using and set it as default
 ```
 sudo pacman -S ghostty
@@ -72,6 +73,6 @@ If you really have no other alternative for an app you want to run you can use [
 paru winboat-bin
 ```
 
-# Mounting additional drives
+## Mounting additional drives
 If you have more than one drive on your PC you can configure so that rest of the drives are automounted on boot (so that you don't have to mount it manually every time in dolphin)
 [Here is tutorial from Cachy wiki](https://wiki.cachyos.org/configuration/automount_with_fstab/#_top)

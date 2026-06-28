@@ -1,4 +1,5 @@
-# Sunshine (Streaming/remote desktop)
+# Remote desktop
+## Sunshine (Streaming/remote desktop)
 [Sunshine](https://github.com/lizardbyte/sunshine) is primarily made for game streaming, but it works as a remote desktop as well
 On host install:
 `sudo pacman -S sunshine`
