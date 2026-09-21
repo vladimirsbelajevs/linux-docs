@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://vladimirsbelajevs.github.io/linux-docs/Linux%20common%20commands/">
+        <link rel="canonical" href="https://vladimirsbelajevs.github.io/linux-docs/Avahi%20disable/">
       
       
-        <link rel="prev" href="../Linux%20Optimizations/">
+        <link rel="prev" href="../Android%20studio/">
       
       
-        <link rel="next" href="../NVIDIA/">
+        <link rel="next" href="../Docker/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Linux common commands - My linux notes</title>
+        <title>Disable or enable Avahi - My linux notes</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux-common-commands" class="md-skip">
+        <a href="#disable-or-enable-avahi" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linux common commands
+              Disable or enable Avahi
             
           </span>
         </div>
@@ -286,10 +286,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Avahi%20disable/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disable or enable Avahi
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -305,6 +332,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-avahi-is-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Avahi is disabled
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-avahi-permanently" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disable Avahi permanently
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-avahi-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable Avahi again
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -448,37 +528,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Linux common commands
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Linux%20common%20commands/" class="md-nav__link">
         
   
   
@@ -494,120 +547,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#command-info" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Command info
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#startup-programs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Startup programs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Troubleshooting
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#checking-system-logs-for-errorswarnings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Checking system logs for errors/warnings
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checking-kernel-boot-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Checking kernel boot messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-boot-time" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Check boot time
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#see-app-startup-times" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        See app startup times
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#opening-ports" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Opening ports
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -774,10 +713,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#command-info" class="md-nav__link">
+  <a href="#why-avahi-is-disabled" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Command info
+        Why Avahi is disabled
       
     </span>
   </a>
@@ -785,10 +724,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#startup-programs" class="md-nav__link">
+  <a href="#disable-avahi-permanently" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Startup programs
+        Disable Avahi permanently
       
     </span>
   </a>
@@ -796,71 +735,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
+  <a href="#enable-avahi-again" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Troubleshooting
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#checking-system-logs-for-errorswarnings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Checking system logs for errors/warnings
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checking-kernel-boot-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Checking kernel boot messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-boot-time" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Check boot time
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#see-app-startup-times" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        See app startup times
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#opening-ports" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Opening ports
+        Enable Avahi again
       
     </span>
   </a>
@@ -884,59 +762,54 @@
 
 
 
-<h1 id="linux-common-commands">Linux common commands<a class="headerlink" href="#linux-common-commands" title="Permanent link">&para;</a></h1>
-<h2 id="command-info">Command info<a class="headerlink" href="#command-info" title="Permanent link">&para;</a></h2>
-<p>If you want to see command options (in short way, give me the tl;dr)
-<div class="highlight"><pre><span></span><code>tldr package_name
-</code></pre></div></p>
-<p>If you want to see the verbose version (full on manual)
-<div class="highlight"><pre><span></span><code>man package_name
-</code></pre></div></p>
-<h2 id="startup-programs">Startup programs<a class="headerlink" href="#startup-programs" title="Permanent link">&para;</a></h2>
-<p>Enable app on startup
-<div class="highlight"><pre><span></span><code>systemctl --user enable app_name
-</code></pre></div></p>
-<p>Disable on startup
-<div class="highlight"><pre><span></span><code>systemctl --user disable app_name
-</code></pre></div></p>
-<p>Disable and stop now
-<div class="highlight"><pre><span></span><code>systemctl --user disable --now app_name
-</code></pre></div></p>
-<p>Check status
-<div class="highlight"><pre><span></span><code>systemctl --user status app_name
-</code></pre></div></p>
-<p>Check if it's running
-<div class="highlight"><pre><span></span><code>systemctl --user is-active sunshine
-</code></pre></div></p>
-<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
-<h3 id="checking-system-logs-for-errorswarnings">Checking system logs for errors/warnings<a class="headerlink" href="#checking-system-logs-for-errorswarnings" title="Permanent link">&para;</a></h3>
-<p>Last boot warnings
-<div class="highlight"><pre><span></span><code>journalctl -b -1 -p warning
-</code></pre></div></p>
-<p>All warnings
-<div class="highlight"><pre><span></span><code>journalctl -p warning
-</code></pre></div></p>
-<p>Last boot errors
-<div class="highlight"><pre><span></span><code>journalctl -b -p err
-</code></pre></div></p>
-<p>Last hour errors
-<div class="highlight"><pre><span></span><code>journalctl --since &quot;1 hour ago&quot; -p err
-</code></pre></div></p>
-<p>KDE issues on current boot
-<div class="highlight"><pre><span></span><code>journalctl --user-unit plasma-kwin_wayland --boot 0
-</code></pre></div></p>
-<h3 id="checking-kernel-boot-messages">Checking kernel boot messages<a class="headerlink" href="#checking-kernel-boot-messages" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>sudo dmesg
+<h1 id="disable-or-enable-avahi">Disable or enable Avahi<a class="headerlink" href="#disable-or-enable-avahi" title="Permanent link">&para;</a></h1>
+<h2 id="why-avahi-is-disabled">Why Avahi is disabled<a class="headerlink" href="#why-avahi-is-disabled" title="Permanent link">&para;</a></h2>
+<p>This system uses NetworkManager with <code>systemd-resolved</code>. The resolver already handles normal DNS, per-interface DNS routing, and multicast DNS (mDNS) for <code>.local</code> names.</p>
+<p>Running both <code>avahi-daemon</code> and the mDNS responder in <code>systemd-resolved</code> caused Avahi to report:</p>
+<div class="highlight"><pre><span></span><code>Detected another IPv4/IPv6 mDNS stack running on this host.
+This makes mDNS unreliable and is thus not recommended.
 </code></pre></div>
-<h3 id="check-boot-time">Check boot time<a class="headerlink" href="#check-boot-time" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>systemd-analyze blame
+<p>For this machine, <code>systemd-resolved</code> is the preferred mDNS provider because:</p>
+<ul>
+<li>NetworkManager is already configured to use it.</li>
+<li><code>/etc/resolv.conf</code> sends queries to its <code>127.0.0.53</code> stub resolver.</li>
+<li><code>/etc/nsswitch.conf</code> uses the <code>resolve</code> module.</li>
+<li>There are no custom Avahi services being published.</li>
+<li>CUPS is not running, and no active application was found using the Avahi client library.</li>
+</ul>
+<p>The Avahi package can remain installed because other packages may require its libraries. Only its daemon and activation socket need to be disabled.</p>
+<h2 id="disable-avahi-permanently">Disable Avahi permanently<a class="headerlink" href="#disable-avahi-permanently" title="Permanent link">&para;</a></h2>
+<p>Stop Avahi now and prevent service, socket, and D-Bus activation on later boots:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>--now<span class="w"> </span>avahi-daemon.socket<span class="w"> </span>avahi-daemon.service
 </code></pre></div>
-<h3 id="see-app-startup-times">See app startup times<a class="headerlink" href="#see-app-startup-times" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>time firefox
+<p>Verify the result:</p>
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>is-enabled<span class="w"> </span>avahi-daemon.service<span class="w"> </span>avahi-daemon.socket
+systemctl<span class="w"> </span>is-active<span class="w"> </span>avahi-daemon.service<span class="w"> </span>avahi-daemon.socket
 </code></pre></div>
-<h2 id="opening-ports">Opening ports<a class="headerlink" href="#opening-ports" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>sudo ufw allow port_nr/protocol (udp/tcp)
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code>disabled
+disabled
+inactive
+inactive
 </code></pre></div>
+<p>Confirm that <code>systemd-resolved</code> is active and still provides mDNS:</p>
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>is-active<span class="w"> </span>systemd-resolved.service
+resolvectl<span class="w"> </span>status
+</code></pre></div>
+<p><code>systemd-resolved</code> should be <code>active</code>, and the applicable network interface should show <code>+mDNS</code>.</p>
+<h2 id="enable-avahi-again">Enable Avahi again<a class="headerlink" href="#enable-avahi-again" title="Permanent link">&para;</a></h2>
+<p>If an application—commonly older network-printer or service-discovery software—specifically requires Avahi, enable and start both units:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>avahi-daemon.socket<span class="w"> </span>avahi-daemon.service
+</code></pre></div>
+<p>Do not leave mDNS responding enabled in both Avahi and <code>systemd-resolved</code>. If Avahi must handle mDNS, disable it in resolved with a drop-in such as:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># /etc/systemd/resolved.conf.d/10-disable-mdns.conf</span>
+<span class="k">[Resolve]</span>
+<span class="na">MulticastDNS</span><span class="o">=</span><span class="s">no</span>
+</code></pre></div>
+<p>Then apply the change:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>systemd-resolved.service<span class="w"> </span>avahi-daemon.service
+</code></pre></div>
+<p>To switch back to <code>systemd-resolved</code>, disable Avahi again, remove or reverse that drop-in, and restart <code>systemd-resolved</code>.</p>
 
 
 
